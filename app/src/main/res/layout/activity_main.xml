@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:layout_weight="1">
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+    <!--<androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">-->
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/toolbar_menu"
+        android:elevation="5dp">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/toolbar">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@drawable/bottomshadow" />
+    </FrameLayout>
+       <!-- </LinearLayout>-->
+
+    <!--</androidx.drawerlayout.widget.DrawerLayout>-->
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:active_item_color="#FFBD2E"
+        app:centre_button_color="#707070"
+        app:inactive_item_color="#707070"
+        app:space_background_color="@color/colorPrimary"
+        app:centre_button_icon="@drawable/ic_location"
+        app:space_item_icon_size="24dp"
+        app:space_item_icon_only_size="24dp"
+        app:active_centre_button_background_color="#2B2B2B"
+        app:active_centre_button_icon_color="#707070"
+        app:inactive_centre_button_icon_color="#FFBD2E"
+        app:space_item_text_size="@dimen/space_item_text_default_size"
+        android:elevation="15dp"
+        android:background="#2B2B2B"/>
+    // working casual nav bar
+   <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:itemIconTint="#FFBD2E"
+        app:menu="@menu/bottom_nav"
+        android:elevation="5dp">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProductDetailsFragment"
+    android:id="@+id/productDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imgProduct"
+        android:background="@drawable/slider_image1"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp">
+    </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/ProductDetailsContainer"
+        android:layout_below="@id/imgProduct"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:elevation="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/productPriceShopBtn"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto"
+                android:text="Product Name"
+                android:textColor="#303030"
+                android:textSize="12dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/txtProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto"
+                android:text="50$"
+                android:textColor="#303030"
+                android:textSize="12dp"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:layout_below="@id/txtProductName"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txtProductNewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtProductPrice"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="Roboto"
+                android:text="40$"
+                android:textStyle="bold"
+                android:textColor="#18AD1D"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp" />
+            <Button
+                android:id="@+id/btnGoToShop"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Shop Name"
+                android:fontFamily="Roboto"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/productDescContainer"
+            android:layout_below="@+id/productPriceShopBtn"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/txtProductDescriptionHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="Roboto"
+                android:text="Product Description"
+                android:textStyle="bold"
+                android:textColor="#303030"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/txtProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The BEARD BOX contains four basic products for
+comprehensive beard care. Washing, brushing, oiling,
+shaping - every full beard is ready for the day. The BEARD
+WASH gently cleans the beard. The BEARD BRUSH untangles,
+shapes and frees you from dandruff. The BEARD OIL softens
+and cares for facial hair and skin. The BEARD HOLD brings
+hold to the beard and ensures a compact shape.
+The BEARD BOX is a perfect gift with the elegant black, highgloss
+lacquered wooden box. Also for yourself. The product
+combination of beard care basics is ideal for the bearded
+beginner. But the frequent beard bearer also appreciates the
+division into hand luggage-friendly sizes."
+                android:textColor="#303030"
+                android:textSize="12dp"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="Roboto"
+                android:layout_below="@id/txtProductDescriptionHead"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

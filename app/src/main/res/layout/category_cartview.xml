@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.ProductDetailsFragment"
+    android:id="@+id/productDetails"
+    android:padding="5dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category1"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category">
+            <ImageView
+                android:id="@+id/imgCategory1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/cat_img1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/txtNameCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category 1"
+                android:textStyle="bold"
+                android:textColor="#646464"
+                android:layout_toRightOf="@id/imgCategory1"/>
+            <TextView
+                android:id="@+id/txtShopsInCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available Shops: 10"
+                android:textSize="12.5dp"
+                android:textColor="#646464"
+                android:layout_below="@id/txtNameCategory1"
+                android:layout_toRightOf="@id/imgCategory1"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:id="@+id/newcategorySepar"
+            android:layout_below="@+id/category"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/separateCategories"
+                android:background="@drawable/border_set_shopbuttons_onclick"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
